@@ -38,7 +38,7 @@ public class DriveTrain extends Subsystem {
   public void move(XboxController controller) {
     Yspeed = controller.getY(Hand.kLeft);
     Xspeed = controller.getX(Hand.kRight);
-    SmartDashboard.putNumber("Y Left JoyStick", Yspeed);
+    SmartDashboard.putNumber("Y Left Joystick", Yspeed);
     SmartDashboard.putNumber("X Right Joystick", Xspeed);
     drive.arcadeDrive(-controller.getY(Hand.kLeft), controller.getX(Hand.kRight));
   }
